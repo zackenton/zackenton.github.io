@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Kenton - Research Scientist</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-4xl p-6 sm:p-8 md:p-12">
+        
+        <header class="flex flex-col sm:flex-row items-center mb-12">
+            <!-- 
+                PROFILE IMAGE
+                To update your image, replace the `src` URL below.
+                A square image (e.g., 500x500 pixels) is recommended.
+                You can upload your image to your GitHub repository and link to it here.
+                Example: `src="profile.jpg"` if the image is in the same folder.
+            -->
+            <div class="w-32 h-32 sm:w-40 sm:h-40 mb-6 sm:mb-0 sm:mr-8 flex-shrink-0">
+                <img 
+                    class="rounded-full w-full h-full object-cover border-4 border-white shadow-lg" 
+                    src="profile-pic.png" 
+                    alt="Zachary Kenton"
+                    onerror="this.onerror=null;this.src='https://placehold.co/400x400/E2E8F0/4A5568?text=Image+Not+Found';"
+                >
+            </div>
+
+            <!-- Name and Title -->
+            <div>
+                <!-- 
+                    YOUR NAME
+                    Replace "Your Name" with your actual name.
+                -->
+                <h1 class="text-4xl font-bold text-gray-900">Zachary Kenton</h1>
+                <!-- 
+                    YOUR TITLE
+                    Replace the text below with your title and affiliation.
+                -->
+                <p class="text-xl text-gray-600 mt-1">Staff Research Scientist, Google DeepMind</p>
+            </div>
+        </header>
+
+        <!-- Main Content Sections -->
+        <main>
+            <!-- 
+                BIOGRAPHY SECTION
+                Edit the content inside the <p> tag to write your bio.
+                You can add more paragraphs by adding more <p>...</p> tags.
+            -->
+            <section id="bio" class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-4">Biography</h2>
+                <p class="text-lg leading-relaxed">
+                    I am a staff research scientist at Google DeepMind, where I focus on AI safety and alignment. 
+                    I lead the Amplified Oversight team, tackling the core problem of enabling accurate human supervision of superhuman AI. 
+                    I was previously a Postdoc at the University of Oxford, in the Oxford Applied and Theoretical Machine Learning (OATML) group, working under Yarin Gal. 
+                    Prior to that I was a Research Assistant under Owain Evans at the Future of Humanity Institute, University of Oxford and a Visiting Researcher at the Montreal Institute for Learning Algorithms (MILA), under Yoshua Bengio. 
+                    I also worked as a Data Scientist at ASI Data Science (now Faculty). 
+                    I completed my PhD in 2017 at Queen Mary University of London in Theoretical Physics, where I worked on string theory and cosmology. 
+                    Prior to my PhD, I studied Mathematics at the University of Cambridge.
+                </p>
+            </section>
+
+            <!-- 
+                RESEARCH INTERESTS SECTION
+                Edit the list items (<li>) below with your research interests.
+                Add or remove items as needed.
+            -->
+            <section id="research" class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-4">Research Interests</h2>
+                <ul class="list-disc list-inside space-y-2 text-lg">
+                    <li>AI Safety and Alignment</li>
+                    <li>Scalable (Amplified) Oversight</li>
+                    <li>AI Debate, Critiques, AutoRaters and Judges</li>
+                    <li>Large Language Model Fine-tuning</li>
+                </ul>
+                <p class="text-lg leading-relaxed mt-4">
+                    <b>Amplified oversight</b> A major hurdle in making sure AI is developed safely 
+                    is that as these systems become more advanced than their creators, it's tough to know if their actions are 
+                    helpful or harmful. The field of "scalable oversight" (AKA amplified oversight) is working to solve this. 
+                    The idea is to create a way to check an AI's work that's as effective as if a person could understand every 
+                    reason behind the AI's choices and had endless time to think about the best decision.
+                </p>
+                <p class="text-lg leading-relaxed mt-4">
+                    The main strategy is to use AI systems to help us understand their own reasoning. For instance, in a "Debate" 
+                    scenario, two AIs are pitted against each other. Each is tasked with finding mistakes in the other's responses 
+                    and explaining them to a human judge. The hope is that if one AI creates a subtle error that a person might miss, 
+                    the other AI will point it out. This allows the human judge to correctly penalize the flawed output, leading to 
+                    safer and more reliable AI.
+                </p>
+            </section>
+
+            <!-- 
+                LINKS SECTION
+                Update the `href` attribute for each link (<a> tag) to your personal profile URLs.
+            -->
+            <section id="links" class="mb-10">
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-4">Links</h2>
+                <div class="flex flex-wrap gap-4">
+                    <!-- Google Scholar Button -->
+                    <a href="https://scholar.google.com/citations?user=bp6Ah4EAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow transition-transform transform hover:scale-105">
+                        Google Scholar
+                    </a>
+                    <!-- X (Twitter) Button -->
+                    <a href="https://twitter.com/ZacKenton1" target="_blank" rel="noopener noreferrer" class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded-lg shadow transition-transform transform hover:scale-105">
+                        X (Twitter)
+                    </a>
+                </div>
+            </section>
+
+            <!-- 
+                CONTACT SECTION
+                The email address is generated by the script at the bottom of the page
+                to protect it from spam bots.
+            -->
+            <section id="contact">
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-gray-200 pb-2 mb-4">Contact</h2>
+                <p class="text-lg leading-relaxed">
+                    The best way to reach me is by email: 
+                    <a id="email-link" class="text-blue-600 hover:underline"></a>
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 mt-16">
+            <p>&copy; 2025 Zachary Kenton. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript to obfuscate email -->
+    <script>
+        // To prevent spam bots, we construct the email address with JavaScript.
+        // --- EDIT THESE TWO LINES WITH YOUR EMAIL ---
+        const user = 'zkenton';
+        const domain = 'google.com';
+        // -------------------------------------------
+
+        const emailLink = document.getElementById('email-link');
+        const emailAddress = `${user}@${domain}`;
+        
+        emailLink.href = `mailto:${emailAddress}`;
+        emailLink.textContent = emailAddress;
+    </script>
+
+</body>
+</html>
